@@ -102,7 +102,7 @@ const Home: NextPage = () => {
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
            @Threadly
         </h1>
-        <p className="text-slate-500 mt-5">Unleash Your Storytelling Skills with Engaging Threads!</p>
+        <p className="text-slate-500 mt-5">Unleash your storytelling skills with engaging threads!</p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -112,11 +112,18 @@ const Home: NextPage = () => {
               alt="1 icon"
               className="mb-5 sm:mb-0"
             />
-            <p className="text-left font-medium">
+            {/* <p className="text-left font-medium">
               Copy your current bio{" "}
               <span className="text-slate-500">
                 (or write a few sentences about yourself)
               </span>
+              .
+            </p> */}
+             <p className="text-left font-medium">
+              Write a story you want to share{" "}
+              {/* <span className="text-slate-500">
+                (or a topic you )
+              </span> */}
               .
             </p>
           </div>
@@ -126,12 +133,12 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+              ""
             }
           />
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
-            <p className="text-left font-medium">Select your vibe.</p>
+            <p className="text-left font-medium">Select your tone.</p>
           </div>
           <div className="block">
             <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
@@ -142,7 +149,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generate your bio &rarr;
+              Generate your story &rarr;
             </button>
           )}
           {loading && (
