@@ -15,7 +15,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Generate your next Thread bio in seconds."
           />
-          <meta property="og:title" content="Thread Bio Generator" />
+          <meta property="og:title" content="Threads Bio Generator" />
           <meta name="thread:card" content="summary_large_image" />
           <meta name="thread:title" content="Thread Bio Generator" />
           <meta
