@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import DropDown, { VibeType } from "../components/DropDown";
 
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import {
@@ -203,7 +203,7 @@ const Home: NextPage = () => {
           )}
         </div>
       </main>
-      <Footer />
+      // <Footer />
     </div>
   );
 };
